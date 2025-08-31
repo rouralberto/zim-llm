@@ -17,9 +17,12 @@ graph TB
     I --> J[Generated Answer<br/>with Sources]
 
     E --> G
-    style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style J fill:#e8f5e8
+    style A fill:#ffffff
+    style A color:#000000
+    style E fill:#ffffff
+    style E color:#000000
+    style J fill:#ffffff
+    style J color:#000000
 ```
 
 ## Features
