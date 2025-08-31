@@ -1,0 +1,12 @@
+{
+  "zim_library_path": "./zim_library",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "vector_db_type": "chroma",
+  "chunk_size": 1000,
+  "chunk_overlap": 200,
+  "persist_directory": "./vector_db",
+  "collection_name": "zim_articles",
+  "llm_provider": "docker_model_runner",
+  "llm_model": "ai/smollm3:Q4_K_M",
+  "max_articles_per_zim": null
+}

@@ -1,0 +1,13 @@
+libzim>=1.2.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+chromadb>=0.4.0
+langchain>=0.1.0
+langchain-community>=0.0.20
+numpy>=1.21.0
+tqdm>=4.62.0
+click>=8.0.0
+openai>=1.0.0
+anthropic>=0.7.0
+ollama>=0.2.0
+beautifulsoup4>=4.12.0
