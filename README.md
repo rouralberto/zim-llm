@@ -3,6 +3,25 @@ This project provides a comprehensive system for processing ZIM files (compresse
 
 This is an good solution for running local LLMs on underpowered computers while providing access to extensive knowledge bases. By leveraging pre-compressed ZIM files and efficient vector search, you can have a powerful AI assistant with encyclopedic knowledge without requiring high-end hardware or constant internet connectivity.
 
+## Architecture Overview
+```mermaid
+graph TB
+    A[ZIM Files<br/>from Kiwix Library] --> B[ZIM Processing<br/>libzim/zimply]
+    B --> C[Text Extraction<br/>& Chunking]
+    C --> D[Embedding<br/>Generation<br/>sentence-transformers]
+    D --> E[Vector Database<br/>ChromaDB/FAISS]
+
+    F[User Query] --> G[Semantic Search<br/>Vector Similarity]
+    G --> H[Context Retrieval<br/>Top-K Results]
+    H --> I[RAG Pipeline<br/>with Local LLM]
+    I --> J[Generated Answer<br/>with Sources]
+
+    E --> G
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style J fill:#e8f5e8
+```
+
 ## Features
 - **Dynamic ZIM Library**: Automatically discovers and processes multiple ZIM files from a dedicated library directory
 - **Multi-format ZIM Support**: Supports libzim, zimply, and CLI-based ZIM file reading
