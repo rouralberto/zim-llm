@@ -17,12 +17,6 @@ graph TB
     I --> J[Generated Answer<br/>with Sources]
 
     E --> G
-    style A fill:#ffffff
-    style A color:#000000
-    style E fill:#ffffff
-    style E color:#000000
-    style J fill:#ffffff
-    style J color:#000000
 ```
 
 ## Features
@@ -44,7 +38,7 @@ graph TB
 ```
 
 ### 2. Add ZIM Files to Library
-Download ZIM files from [Kiwix Library](https://library.kiwix.org/) and place them in the `zim_library` directory:
+Download ZIM files from [Kiwix Library](https://library.kiwix.org/) or the [Wikimedia Dump](https://dumps.wikimedia.org/other/kiwix/zim/wikipedia/) and place them in the `zim_library` directory:
 
 ```bash
 # Example: Add multiple ZIM files to your library
@@ -188,7 +182,7 @@ For large ZIM files:
 
 ## ZIM Library Management
 ### Adding ZIM Files
-1. **Download from Kiwix Library**: Visit https://library.kiwix.org/
+1. **Download from Kiwix Library**: Visit https://library.kiwix.org/ or the [Wikimedia Dump](https://dumps.wikimedia.org/other/kiwix/zim/wikipedia/)
 2. **Place in library directory**: Copy ZIM files to `./zim_library/`
 3. **Scan library**: Run `python3 zim_rag.py list-zim` to see available files
 4. **Build database**: Run `python3 zim_rag.py build` to process all files
