@@ -27,9 +27,9 @@ import click
 import faiss
 import numpy as np
 from bs4 import BeautifulSoup
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_classic.chains import RetrievalQA
+from langchain_classic.prompts import PromptTemplate
+from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.llms import Anthropic, Ollama, OpenAI
 from langchain_community.vectorstores import FAISS, Chroma
