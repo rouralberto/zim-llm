@@ -79,8 +79,12 @@ vector_db/
 zim_library/*.zim
 !zim_library/.gitkeep
 
-# Keep the zim_library directory structure
-zim_library/.gitkeep
+# Exports
+zim_articles*.json
+zim_articles*.jsonl
+
+# Test cache
+.pytest_cache/
 
 # Model cache
 .cache/
