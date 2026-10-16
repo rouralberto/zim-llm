@@ -1090,6 +1090,7 @@ def docker_cli_generate(model: str, system: str, prompt: str, timeout: float) ->
     try:
         result = subprocess.run(
             ["docker", "model", "run", model, f"{system}\n\n{prompt}"],
+            stdin=subprocess.DEVNULL,  # otherwise it waits to read extra input from stdin
             capture_output=True,
             text=True,
             timeout=timeout,
